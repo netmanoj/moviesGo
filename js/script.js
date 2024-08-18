@@ -1,4 +1,5 @@
-const global = {
+
+  const global = {
     currentPage: window.location.pathname,
     search: {
       term: '',
@@ -7,12 +8,12 @@ const global = {
       totalPages: 1,
       totalResults: 0,
     },
-    api:{
-        apiKey: '48b71f02d5bf857517813b8b6a1a5348',
-        apiUrl: 'https://api.themoviedb.org/3/',
+    api: {
+
+      apiKey: '48b71f02d5bf857517813b8b6a1a5348',
+      apiUrl: 'https://api.themoviedb.org/3/',
     },
   };
-  
   // Display 20 most popular movies
   async function displayPopularMovies() {
     const { results } = await fetchAPIData('movie/popular');
